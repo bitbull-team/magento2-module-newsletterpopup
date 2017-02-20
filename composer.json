@@ -1,0 +1,23 @@
+{
+  "name": "bitbull/magento2-module-newsletter-popup",
+  "description": "Newsletter popup",
+  "license": "Open Software License (OSL)",
+  "authors": [
+    {
+      "name": "Irene Iaccio, Marco Greco"
+    }
+  ],
+  "require": {
+    "php": "~5.5.0|~5.6.0|~7.0.0",
+    "magento/module-ui": "100.0.*",
+    "magento/framework": "100.0.*",
+    "magento/module-cms": "100.0.*"
+  },
+  "type": "magento2-module",
+  "autoload": {
+    "files": [ "registration.php" ],
+    "psr-4": {
+      "Bitbull\\InstagramWidget\\": ""
+    }
+  }
+}
