@@ -10,7 +10,6 @@ define([
 
     var options = {
         type: 'popup',
-        responsive: true,
         innerScroll: true,
         title: $.mage.__('Iscriviti alla newsletter'),
         modalClass: "newsletter-modal",
@@ -23,9 +22,8 @@ define([
         }]
     };
 
-    function setCookie() {
-        $.mage.cookies.set(cookie, 'yes',
-            {lifetime: 342342342342});
+    function setCookie(cookie) {
+        $.mage.cookies.set(cookie, 'yes', {lifetime: 342342342342});
     }
 
 
@@ -43,7 +41,7 @@ define([
 
         if (isCookieSet (cookie) != true ) {
             html.modal('openModal');
-            setCookie();
+            setCookie(cookie);
         }
     }
 

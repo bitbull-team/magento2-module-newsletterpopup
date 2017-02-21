@@ -3,19 +3,15 @@
 & when (@media-common = true) {
 
   .popup-newsletter {
-    .field.newsletter {
-       float: left;
-       margin-right: 10px;
-    }
     input[type="email"] {
       height: 35px;
     }
     h4 {
       font-size: 2rem;
-
-      span {
-
-      }
+    }
+    .action.primary {
+      margin-top: 10px;
+      width: 100%;
     }
   }
 
@@ -34,6 +30,9 @@
     }
     .modal-content {
       padding-top: 1rem !important;
+    }
+    .action-close {
+      display: none;
     }
   }
 }
