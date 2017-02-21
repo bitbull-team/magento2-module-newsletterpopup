@@ -1,7 +1,7 @@
 var config = {
     map: {
         '*': {
-            'newsletter-popup':  'Bitbull_NewsletterPopup/js/newsletter'
+            newsletterPopup: 'Bitbull_NewsletterPopup/js/newsletter'
         }
     }
 };

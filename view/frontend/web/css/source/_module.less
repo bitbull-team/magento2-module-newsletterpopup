@@ -1,3 +1,39 @@
+@dark-color: #1f1f1f;
+
 & when (@media-common = true) {
 
+  .popup-newsletter {
+    .field.newsletter {
+       float: left;
+       margin-right: 10px;
+    }
+    input[type="email"] {
+      height: 35px;
+    }
+    h4 {
+      font-size: 2rem;
+
+      span {
+
+      }
+    }
+  }
+
+  .newsletter-modal {
+    .modal-inner-wrap {
+      max-width: 500px;
+    }
+    .modal-header {
+      background: @dark-color;
+      color: #fff;
+      padding-bottom: 0;
+
+      .modal-title {
+        border: none;
+      }
+    }
+    .modal-content {
+      padding-top: 1rem !important;
+    }
+  }
 }
