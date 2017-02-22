@@ -28,11 +28,21 @@
         border: none;
       }
     }
+    .modal-footer {
+      display: none;
+    }
     .modal-content {
-      padding-top: 1rem !important;
+      padding: 1rem 3rem 3rem;
     }
     .action-close {
-      display: none;
+      padding: 2rem;
+      &:before {
+        font-size: 50px;
+        color: #fff;
+      }
+      &:hover:before {
+        color: #ddd;
+      }
     }
   }
 }
