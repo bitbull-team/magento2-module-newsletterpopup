@@ -46,7 +46,7 @@ define([
     }
 
     return function () {
-        setTimeout(openModal, 1000);
+        setTimeout(openModal, 60000);
     };
 
 });
