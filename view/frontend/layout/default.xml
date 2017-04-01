@@ -8,7 +8,14 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="root">
-            <block class="Magento\Newsletter\Block\Subscribe" name="nesletter-popup" template="Bitbull_NewsletterPopup::newsletter/popup.phtml" />
+            <block class="Bitbull\NewsletterPopup\Block\NewsletterPopup"
+                   name="nesletter-form"
+                   template="Bitbull_NewsletterPopup::newsletter/form.phtml" />
+            <block class="Magento\Newsletter\Block\Subscribe" name="nesletter-popup" template="Bitbull_NewsletterPopup::newsletter/popup.phtml">
+
+                       <!--ifconfig="instagram/settings/enabled_homepage" -->
+
+            </block>
         </referenceContainer>
     </body>
 </page>

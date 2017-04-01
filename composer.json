@@ -17,7 +17,7 @@
   "autoload": {
     "files": [ "registration.php" ],
     "psr-4": {
-      "Bitbull\\InstagramWidget\\": ""
+      "Bitbull\\NewsletterPopup\\": ""
     }
   }
 }
