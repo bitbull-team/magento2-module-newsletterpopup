@@ -36,8 +36,8 @@ class NewsletterPopup extends \Magento\Framework\View\Element\Template
     public function getConfig()
     {
         return [
-            'popup_delay' => $this->_getPopupDelay(),
-            'popup_title' => $this->_getPopupTitle()
+            'delay' => $this->_getPopupDelay(),
+            'title' => $this->_getPopupTitle()
         ];
     }
 
