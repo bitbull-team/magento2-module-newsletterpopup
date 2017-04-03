@@ -8,10 +8,10 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <referenceContainer name="root">
-            <block class="Bitbull\NewsletterPopup\Block\NewsletterPopup" name="newsletter-popup" template="Bitbull_NewsletterPopup::newsletter/popup.phtml">
-                <block class="Magento\Newsletter\Block\Subscribe"
-                       name="newsletter-form" template="Bitbull_NewsletterPopup::newsletter/form.phtml" />
-                       <!--ifconfig="instagram/settings/enabled_homepage" -->
+            <block class="Bitbull\NewsletterPopup\Block\NewsletterPopup" name="newsletter-popup"
+                   template="Bitbull_NewsletterPopup::newsletter/popup.phtml">
+                   <!--ifconfig="popup/settings/enabled"-->
+                <block class="Magento\Newsletter\Block\Subscribe" name="newsletter-form" template="Bitbull_NewsletterPopup::newsletter/form.phtml"/>
             </block>
         </referenceContainer>
     </body>

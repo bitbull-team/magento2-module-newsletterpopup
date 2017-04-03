@@ -6,17 +6,25 @@
         </tab>
         <section id="bitbull" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
             <class>separator-top</class>
-            <label>Nesletter Popup</label>
+            <label>Newsletter Popup</label>
             <tab>bitbull</tab>
             <resource>Magento_Config::config_admin</resource>
-            <group id="settings" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <group id="settings" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>Settings</label>
-                <field id="enabled" translate="label" type="select" sortOrder="9" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="enabled" translate="label" type="select" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Display Popup</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                 </field>
-                <field id="popup_delay" translate="label" type="text" sortOrder="10" showInDefault="3000" showInWebsite="1" showInStore="1">
+                <field id="popup_delay" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Popup Delay</label>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="popup_title" translate="label" type="text" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Popup Title</label>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="popup_text" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Popup Text</label>
                     <validate>required-entry</validate>
                 </field>
             </group>

@@ -36,8 +36,19 @@ class NewsletterPopup extends \Magento\Framework\View\Element\Template
     public function getConfig()
     {
         return [
-            'popup_delay' => $this->_getPopupDelay()
+            'popup_delay' => $this->_getPopupDelay(),
+            'popup_title' => $this->_getPopupTitle()
         ];
+    }
+
+    /**
+     * Newsletter Popup Text.
+     *
+     * @return string
+     */
+    public function getPopupText()
+    {
+        return $this->configHelper->getConfigParam(NewsletterPopupConfig::POPUP_TEXT);
     }
 
     /**
@@ -50,4 +61,13 @@ class NewsletterPopup extends \Magento\Framework\View\Element\Template
         return (string) $this->escapeHtml($this->configHelper->getConfigParam(NewsletterPopupConfig::POPUP_DELAY));
     }
 
+    /**
+     * Newsletter Popup Title.
+     *
+     * @return string
+     */
+    protected function _getPopupTitle()
+    {
+        return (string) $this->escapeHtml($this->configHelper->getConfigParam(NewsletterPopupConfig::POPUP_TITLE));
+    }
 }

@@ -5,13 +5,11 @@
  * @var $block \Bitbull\InstagramWidget\Block\Instagram
  */
 ?>
+<?php echo $block->getPopupText();?>
 <div style="display: none">
     <div class="popup-newsletter">
         <div class="content">
-            <h4>
-                <?php /* @escapeNotVerified */ echo __('Subito per te uno sconto del ') ?>
-                <span><?php /* @escapeNotVerified */ echo __('10%') ?></span>
-            </h4>
+            <?php echo $block->getPopupText();?>
             <?php echo $block->getChildHtml('newsletter-form'); ?>
         </div>
     </div>
