@@ -6,15 +6,22 @@
  */
 ?>
 <div style="display: none">
-    <div class="popup-newsletter" data-mage-init='{"newsletterPopup": {"config":"<?php echo \Zend_Json::encode($block->getConfig()) ?>"}}'>
+    <div class="popup-newsletter">
         <div class="content">
             <h4>
                 <?php /* @escapeNotVerified */ echo __('Subito per te uno sconto del ') ?>
                 <span><?php /* @escapeNotVerified */ echo __('10%') ?></span>
             </h4>
-            <!-- FORM -->
+            <?php echo $block->getChildHtml('newsletter-form'); ?>
         </div>
     </div>
 </div>
+<script type="text/x-magento-init">
+    {
+        ".popup-newsletter": {
+            "newsletterPopup": <?php echo \Zend_Json::encode($block->getConfig()) ?>
+        }
+    }
+</script>
 
 

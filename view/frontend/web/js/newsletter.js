@@ -22,31 +22,42 @@ define([
         }]
     };
 
-    function setCookie(cookie) {
-        $.mage.cookies.set(cookie, 'yes', {lifetime: 342342342342});
-    }
+    $.widget('popup.newsletter', {
 
+        _init: function() {
+            var $widget = this;
 
-    function isCookieSet (cookie) {
-        if ($.mage.cookies.get(cookie) == 'yes') {
-            return true;
+            console.log(this);
+
+            setTimeout(function(){
+                $widget.openModal();
+            }, 1000);
+        },
+
+        setCookie: function (cookie) {
+            $.mage.cookies.set(cookie, 'yes', {lifetime: 342342342342});
+        },
+
+        openModal: function () {
+
+            var html   = this.element,
+                popup  = modal(options, html),
+                cookie = 'newsletter';
+
+            //if (this._isCookieSet (cookie) != true ) {
+               html.modal('openModal');
+               this.setCookie(cookie);
+            //}
+
+        },
+
+        _isCookieSet: function (cookie) {
+            if ($.mage.cookies.get(cookie) == 'yes') {
+                return true;
+            }
         }
-    }
 
-    function openModal() {
+    });
 
-        var html   = $('.popup-newsletter'),
-            popup  = modal(options, html),
-            cookie = 'newsletter';
-
-        if (isCookieSet (cookie) != true ) {
-            html.modal('openModal');
-            setCookie(cookie);
-        }
-    }
-
-    return function () {
-        setTimeout(openModal, 60000);
-    };
-
+    return $.popup.newsletter;
 });
