@@ -9,8 +9,8 @@
     <body>
         <referenceContainer name="root">
             <block class="Bitbull\NewsletterPopup\Block\NewsletterPopup" name="newsletter-popup"
-                   template="Bitbull_NewsletterPopup::newsletter/popup.phtml">
-                   <!--ifconfig="popup/settings/enabled"-->
+                   template="Bitbull_NewsletterPopup::newsletter/popup.phtml"
+                   ifconfig="bitbull/settings/enabled">
                 <block class="Magento\Newsletter\Block\Subscribe" name="newsletter-form" template="Bitbull_NewsletterPopup::newsletter/form.phtml"/>
             </block>
         </referenceContainer>
