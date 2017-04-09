@@ -1,48 +1,28 @@
-@dark-color: #1f1f1f;
-
 & when (@media-common = true) {
 
   .popup-newsletter {
-    input[type="email"] {
-      height: 35px;
-    }
+
     h4 {
       font-size: 2rem;
     }
+
     .action.primary {
       margin-top: 10px;
       width: 100%;
     }
-  }
 
+  }
   .newsletter-modal {
+
     .modal-inner-wrap {
       max-width: 500px;
     }
-    .modal-header {
-      background: @dark-color;
-      color: #fff;
-      padding-bottom: 0;
 
-      .modal-title {
-        border: none;
-      }
-    }
-    .modal-footer {
-      display: none;
-    }
     .modal-content {
       padding: 1rem 3rem 3rem;
     }
     .action-close {
       padding: 2rem;
-      &:before {
-        font-size: 50px;
-        color: #fff;
-      }
-      &:hover:before {
-        color: #ddd;
-      }
     }
   }
 }

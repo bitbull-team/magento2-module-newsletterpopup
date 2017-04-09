@@ -30,11 +30,6 @@ define([
 
             if (this._isCookieSet (cookie) != true )  {
 
-                /**
-                 setTimeout(function(){
-                 $widget.openModal(options);
-                 }, 2000);**/
-
                 this._logTime(time, function(){
                     $widget._openModal(options, cookie);
                 });
