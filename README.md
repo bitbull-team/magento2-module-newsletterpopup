@@ -11,7 +11,7 @@ Add these lines to the composer.json of your project
 ```
 "require":{
     ...
-    "bitbull/magento2-module-newsletter-popup": "1.0.0"
+    "bitbull/magento2-module-newsletter-popup": "1.0.1"
  }
  ```
  
@@ -33,6 +33,7 @@ After install go to **Stores -> Configuration -> Bitbull -> Newsletter Popup** a
 Changelog
 ----------
 
+* 1.0.1 - Added unique validation id
 * 1.0.0 - First release
 
 
