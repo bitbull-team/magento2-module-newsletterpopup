@@ -33,7 +33,7 @@ After install go to **Stores -> Configuration -> Bitbull -> Newsletter Popup** a
 Changelog
 ----------
 
-* 1.0.1 - Added unique validation id
+* 1.0.1 - Added single validation id
 * 1.0.0 - First release
 
 
