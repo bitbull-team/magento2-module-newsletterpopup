@@ -17,6 +17,7 @@
                 </field>
                 <field id="popup_delay" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1">
                     <label>Popup Delay</label>
+                    <comment>Number of milliseconds after which the popup is automatically displayed</comment>
                     <validate>required-entry</validate>
                 </field>
                 <field id="popup_title" translate="label" type="text" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1">
