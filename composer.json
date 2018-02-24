@@ -4,11 +4,23 @@
   "license": "Open Software License (OSL)",
   "authors": [
     {
-      "name": "Irene Iaccio"
+      "name": "Irene Iaccio",
+      "email": "irene.iaccio@bitbull.it"
+    },
+    {
+      "name": "Lorena Ramonda",
+      "email": "lorena.ramonda@bitbull.it"
+    }
+  ],
+  "repositories":[
+    {
+      "type": "vcs",
+      "url":"git@github.com:bitbull-team/magento2-module-bitbull-common.git"
     }
   ],
   "require": {
-    "php": "~5.5.0|~5.6.0|~7.0.0"
+    "php": "~5.5.0|~5.6.0|~7.0.0",
+    "bitbull/common": "*"
   },
   "type": "magento2-module",
   "autoload": {
