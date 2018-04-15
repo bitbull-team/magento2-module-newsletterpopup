@@ -8,7 +8,7 @@ use Magento\Framework\App\Helper\Context;
 class Config extends AbstractHelper
 {
 
-    const BASE_CONFIG_XML_PREFIX  = 'bitbull/settings/%s';
+    const BASE_CONFIG_XML_PREFIX  = 'bitbull_newsletterpopup/settings/%s';
     const POPUP_DELAY             = 'popup_delay';
     const POPUP_TITLE             = 'popup_title';
     const POPUP_TEXT              = 'popup_text';
