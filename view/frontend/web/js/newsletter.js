@@ -1,5 +1,4 @@
 define([
-
     "jquery",
     "Magento_Ui/js/modal/modal",
     "mage/cookies",
@@ -8,7 +7,7 @@ define([
 ], function($,modal) {
     "use strict";
 
-    $.widget('popup.newsletter', {
+    $.widget('bitbull.popupNewsletter', {
 
         /**
          * @private
@@ -118,5 +117,5 @@ define([
 
     });
 
-    return $.popup.newsletter;
+    return $.bitbull.popupNewsletter;
 });
