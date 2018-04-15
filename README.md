@@ -1,6 +1,6 @@
 # Magento2 newsletter subscribe #
 
-A newsletter subscribing form that appears after a certain number of seconds.
+A newsletter subscribing form that appears **once** after a certain number of seconds until set cookie expire.
 
 ![Frontend](docs/frontend.png)
 
@@ -11,14 +11,17 @@ Add these lines to the composer.json of your project
 ```
 "require":{
     ...
-    "bitbull/magento2-module-newsletter-popup": "1.0.1"
+    "bitbull/magento2-module-newsletter-popup": "2.0.0"
  }
  ```
  
  ```
  "repositories":[
       ...
-     {"type": "vcs", "url":"https://github.com/bitbull-team/magento2-module-newsletterpopup.git"}
+     {
+        "type": "vcs",
+        "url":"https://github.com/bitbull-team/magento2-module-newsletterpopup.git"
+     }
  ]
 ```
 
@@ -33,6 +36,7 @@ After install go to **Stores -> Configuration -> Bitbull -> Newsletter Popup** a
 Changelog
 ----------
 
+* 2.0.0 - Moved module under Bitbull tab and refactoring module name occurrences
 * 1.0.1 - Added single validation id
 * 1.0.0 - First release
 
